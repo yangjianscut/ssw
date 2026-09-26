@@ -1,0 +1,23 @@
+{
+  "lact": {
+    "chunk_size": 2048,
+    "block_size": 64,
+    "keep_fraction": 0.125,
+    "selected_blocks": 4,
+    "score": "supplied reduced learning-rate statistic",
+    "optimizer": "native inner optimizer, including Muon",
+    "rescale": false
+  },
+  "inplace": {
+    "chunk_size": 1024,
+    "block_size": 64,
+    "keep_fraction": 0.5,
+    "selected_blocks": 8,
+    "score": "norm(h_i) * norm(t_i @ P)",
+    "learning_rate": 3,
+    "adaptation_layers": [0, 6, 12, 18, 24, 30],
+    "commit_dtype": "bfloat16",
+    "archived_clipping": false,
+    "rescale": false
+  }
+}
